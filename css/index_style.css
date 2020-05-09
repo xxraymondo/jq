@@ -1,0 +1,209 @@
+html
+{
+    font-size: 16px !important;
+}
+body{
+
+    overflow: hidden;
+}
+#btnUp
+{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+display: none;
+}
+#load{
+    background-color: yellow;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999999999;
+    display: flex;
+    align-items: center;
+}
+.spinner {
+   
+    width: 40px;
+    height: 40px; 
+   
+    background-color: rgb(255, 255, 255);
+  
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+#navbar
+{
+    transition: background-color 1.4s;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+#arr{
+    z-index: 9999;
+    
+font-size: 2rem;
+position: fixed;
+bottom: 30px;
+right: 30px;
+cursor: pointer;
+
+}
+.color-box{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+   cursor: pointer;
+}
+.box{
+    position: fixed;
+    top: 200px;
+    
+}
+
+.imgIN{
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.box i{
+    background-color: rgb(68, 68, 68);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.img-item
+{
+    width: 20%;
+    float: left;
+    cursor: pointer;
+}
+body
+{
+    font-family: 'segoe ui light' !important ;
+}
+.text-sm
+{
+    font-size: 0.9rem;
+}
+
+nav::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    background-color: rgba(255,255,255,.1);
+    opacity: 0.7;
+    width: 90%;
+    height: 1px;
+}
+.text-opacity
+{
+    color: rgba(255,255,255,.65)!important;
+}
+.navbar-nav .nav-link
+{
+    color: #Fff;
+    font-size: 0.85rem;
+    padding: 1rem;
+}
+header
+{
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+.overlay
+{
+    background-color: rgba(0,0,0,0.55);
+    height: 100%;
+}
+header h4
+{
+    position: relative;
+    transform: rotate(-90deg);
+    transform-origin: top right;
+}
+header h4::before
+{
+    content:"";
+    background-color: #fff;
+    right: 102%;
+    top: 50%;
+    height: 2px;
+    width: 2rem;
+    position: absolute;
+}
+
+@media (max-width:800px)
+{
+    header h4
+    {
+        transform: rotate(0deg);
+    }
+}
+#features{
+    cursor: pointer;
+}
+
+#features i
+{  
+    color: #f5ba4b!important;
+    font-size: 1.2rem;
+}
+#menu .nav-link
+{
+    color: #000;
+    font-weight: 700;
+}
+#menu .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: transparent;
+    border-bottom: solid 1px #f5ba4b;
+    border-radius: 0;
+}
+.menu-item
+{
+    position: relative;
+}
+.menu-item:after
+{
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.05);
+    top: 100%;
+    left: 10%;
+    position: absolute;
+}
+
+#showing
+{
+    background-color: #343a40!important;
+}
+#services [class*=col-]
+{
+    padding-left:5px ;
+    padding-right: 5px;
+}
